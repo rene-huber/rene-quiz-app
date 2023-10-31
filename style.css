@@ -74,6 +74,7 @@ main {
     flex-direction: column; 
     justify-content: space-between; 
     align-items: center; 
+    width: 350px;
     height: 921px!important;
     text-align: center;
     background-color: #f0f0f0;
