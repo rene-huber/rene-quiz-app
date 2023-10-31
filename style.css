@@ -23,7 +23,7 @@ header {
     height: auto;
   
     color: #ff36a4;
-    padding: 20px 15px;
+    padding: 2px 0 20px 0;
     text-shadow: 4px 3px 5px #000000b5;
     font-size: 35px;
     text-align: center;
@@ -38,7 +38,8 @@ header {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
 background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-    
+border-bottom: 1px solid #ff0090;
+border-top: 1px solid #2b2b2b
 }
 
 
@@ -52,6 +53,9 @@ background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+,
     border-radius: 10px;
     box-shadow: 9px 9px 13px rgb(0 0 0 / 23%);
     margin: 70px;
+    border: 2px solid #FFF;
+
+   
    
 }
 
@@ -61,18 +65,32 @@ background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+,
 }
 
 .btn-answer {
-    background-color: #ff0090;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff5db1+0,ff0090+100 */
+background: linear-gradient(to bottom,  #ff5db1 0%,#ff0090 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.43);
+}
+
+.btn-answer:hover {
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0090+0,ff2da0+100 */
+background: linear-gradient(to bottom,  #ff0090 0%,#ff2da0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+box-shadow: 0px 1px 7px rgba(0,0,0,0.43);
+
 }
 
 .category-btns {
-    display: fixed;
+    display: flex;
     justify-content: space-around;
+
+    
     margin-top: 21px;
 }
 
@@ -100,7 +118,7 @@ footer {
  
     align-items: center;
  
-
+    border-top: 1px solid #ff0090;
 
     color: #fff;
     padding: 20px;
@@ -117,6 +135,25 @@ background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+,
     flex: 1;
     text-align: center;
 }
+
+.icon a {
+ font-size: 43px ; color: #ff0090!important;
+ 
+}
+
+.active {  font-size: 55px ; color: #00000000;
+    text-shadow: 3px 3px 5px #0000000f;
+-webkit-text-stroke: 2px #c5975d94;
+font-size: 43px;
+}
+
+
+
+.icon:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
 
 .icon img {
     width: 50px; 
