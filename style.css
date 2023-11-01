@@ -173,3 +173,11 @@ footer {
     transform: scale(1.2);
     transition: 0.3s;
 }
+
+
+.profile img {
+    width: 550px;
+    height: auto;
+    margin: 0 50px;
+    border-radius: 55px;
+}
