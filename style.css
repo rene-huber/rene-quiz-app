@@ -83,9 +83,12 @@ main {
    
 }
 
+.card_bk_book {background: url("https://rene-huber.site/bookmark_filled.png") top right  no-repeat;
+    background-size: 30px;}
+.card_bk_home {background: url("https://rene-huber.site/bookmark_filled2.png") top right  no-repeat;
+    background-size: 30px;}
 .card {
-    background: url("https://rene-huber.site/bookmark_filled.png") top right  no-repeat;
-    background-size: 30px;
+    
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
