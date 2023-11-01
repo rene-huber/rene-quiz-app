@@ -24,6 +24,14 @@ h2 {
     font-family: 'Oswald', sans-serif;
 }
 
+.profile_h2{
+    font-family: 'VT323', monospace;
+    font-size: 55px;
+    text-align: center;
+    color: #ff36a4;
+    text-shadow:  2px 2px 0 #000;
+}
+
 .bookmark {
     position: absolute;
     top: -10px;
@@ -66,10 +74,18 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-top: 7%;
+    margin-top: 235px;
+}
+
+#main_profile {
+  
+    height: 70vh;
+   
 }
 
 .card {
+    background: url("https://rene-huber.site/bookmark_filled.png") top right  no-repeat;
+    background-size: 30px;
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
@@ -86,7 +102,13 @@ main {
 }
 
 
-
+.buttons {
+    display: flex;
+    justify-content:center;
+    gap: 3%;
+    width: 100%;
+    margin: 21px 0;
+}
 
 
 .show-more {
@@ -94,7 +116,7 @@ main {
 text-align: center;
     height: 80px;
     width: 200px;
-    margin: 7% auto;
+    margin: 155px auto 170px auto;
 }
 
 .btn-show {
@@ -176,7 +198,7 @@ footer {
 
 
 .profile img {
-    width: 550px;
+    width: 250px;
     height: auto;
     margin: 0 50px;
     border-radius: 55px;
