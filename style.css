@@ -44,6 +44,7 @@ h2 {
 }
 
 header {
+    z-index: 999 ;
     width: 80vw;
     height: 77px;
     position: fixed;
@@ -74,7 +75,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-top: 235px;
+  margin-top: 133px;
 }
 
 #main_profile {
@@ -83,10 +84,18 @@ main {
    
 }
 
-.card_bk_book {background: url("https://rene-huber.site/bookmark_filled.png") top right  no-repeat;
+.hidden {
+    display: none;
+  }
+
+/* .card_bk_book {background: url("https://rene-huber.site/bookmark_filled.png") top right  no-repeat;
     background-size: 30px;}
 .card_bk_home {background: url("https://rene-huber.site/bookmark_filled2.png") top right  no-repeat;
-    background-size: 30px;}
+    background-size: 30px;} */
+
+
+
+
 .card {
     
     display: flex;
@@ -102,7 +111,25 @@ main {
     box-shadow: 9px 9px 13px rgb(0 0 0 / 23%);
     margin: 50px;
     border: 2px solid #FFF;
+    position: relative;
 }
+
+.bookmarks {
+    position: absolute;
+    right: 8px;
+    top: -1px;
+    font-size: 33px;
+    color: #ccc;
+    text-shadow: 1px 1px 1px #000;
+    transition: color 0.53s, text-shadow 0.53s;
+}
+.bookmarks:hover {color: #ceafc0;}
+
+.bookmarks_active {
+    color: #e22d90!important;
+  
+}
+
 
 
 .buttons {
@@ -205,4 +232,13 @@ footer {
     height: auto;
     margin: 0 50px;
     border-radius: 55px;
+}
+
+.bookmarks {
+    position: absolute;
+    right: 8px;
+    top: -4px;
+    font-size: 33px;
+    color: #ccc;
+    text-shadow: 1px 1px 1px #000;
 }
