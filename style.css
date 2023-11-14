@@ -260,7 +260,26 @@ footer {
     text-shadow: 0px 0px 5px #1b1b1bf0
 }
 
+@media screen and (max-width: 580px) {
+    .icon {
+        display: flex;
+        align-items: center;
+        margin: 0 17px;
+    }
 
+
+    .icon a {
+        font-size: 27px;
+        color: #ff53b6;
+    }
+    
+    .icon_active a {
+        font-size: 27px;
+        color: #6f475e!important;
+        text-shadow: 0px 0px 5px #1b1b1bf0
+    }
+
+}
 
 .icon:hover {
     transform: scale(1.2);
