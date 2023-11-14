@@ -10,67 +10,112 @@
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=VT323&display=swap"
+      rel="stylesheet"
+    />
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <title>Quiz App</title>
   </head>
   <body>
     <header>
-        <h1>Quiz App</h1>
+      <h1>Quiz App</h1>
     </header>
 
     <main>
-        <article class="card card_bk_book">
-            <h2>What property flips the axes in FlexBox?</h2>
-            <button class="btn-answer">Show Answer</button>
-            <div class="category-btns">
-                <button class="category-btn">#HTML</button>
-                <button class="category-btn">#FLEXBOX</button>
-                <button class="category-btn">#CSS</button>
-            </div>
-        </article>
+      <section class="card">
+        <a href="#" class="bookmarks activeBookmarks" data-js="toggle_bookmark">
+          <i class="fa-solid fa-bookmark"></i>
+        </a>
 
-        <article class="card card_bk_book">
-            <h2>What does CSS stand for?</h2>
-            <button class="btn-answer">Show Answer</button>
-            <div class="category-btns">
-                <button class="category-btn">#HTML</button>
-                <button class="category-btn">#FLEXBOX</button>
-                <button class="category-btn">#CSS</button>
-            </div>
-        </article>
+        <h2>What property flips the axes in FlexBox?</h2>
 
-        <article class="card card_bk_book">
-    
-            <h2>How can you center an element horizontally in CSS?</h2>
-            <button class="btn-answer">Show Answer</button>
-            <div class="category-btns">
-                <button class="category-btn">#HTML</button>
-                <button class="category-btn">#FLEXBOX</button>
-                <button class="category-btn">#CSS</button>
-            </div>
-        </article>
+        <button class="btn-answer" data-js="toggle_answer">Show Answer</button>
+
+        <div class="category-btns">
+          <button class="category-btn">#HTML</button>
+          <button class="category-btn">#FLEXBOX</button>
+          <button class="category-btn">#CSS</button>
+        </div>
+
+        <div class="answer hidden">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <a href="#" class="bookmarks activeBookmarks"
+          ><i class="fa-solid fa-bookmark"></i
+        ></a>
+        <h2>What does CSS stand for?</h2>
+        <button class="btn-answer" data-js="toggle_answer">Show Answer</button>
+        <div class="category-btns">
+          <button class="category-btn">#HTML</button>
+          <button class="category-btn">#FLEXBOX</button>
+          <button class="category-btn">#CSS</button>
+        </div>
+        <div class="answer hidden">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <a href="#" class="bookmarks activeBookmarks"
+          ><i class="fa-solid fa-bookmark"></i
+        ></a>
+        <h2>How can you center an element horizontally in CSS?</h2>
+        <button class="btn-answer" data-js="toggle_answer">Show Answer</button>
+        <div class="category-btns">
+          <button class="category-btn">#HTML</button>
+          <button class="category-btn">#FLEXBOX</button>
+          <button class="category-btn">#CSS</button>
+        </div>
+        <div class="answer hidden">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </section>
     </main>
 
     <section class="show-more">
-        <button class="btn-show">Show More</button>
+      <button class="btn-show">Show More</button>
     </section>
 
     <footer>
-        <div class="icon">
-            <a href="/" class=""><i class="fa-solid fa-house"></i></a>
-        </div>
-        <div class="icon">
-            <a href="/bookmarks.html" class=""><i class="fa-solid fa-bookmark"></i></a>
-        </div>
-        <div class="icon">
-            <a href="/profile.html" class=""> <i class="fa-solid fa-circle-user"></i> </a>
-        </div>
+      <div class="icon">
+        <a href="/" class=""><i class="fa-solid fa-house"></i></a>
+      </div>
+      <div class="icon icon_active">
+        <a href="/bookmarks.html" class=""
+          ><i class="fa-solid fa-bookmark"></i
+        ></a>
+      </div>
+      <div class="icon">
+        <a href="/form.html" class="">
+          <i class="fa-solid fa-circle-plus"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="/profile.html" class="">
+          <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
