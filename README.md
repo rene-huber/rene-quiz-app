@@ -4,6 +4,6 @@
 
 
 
-![layout](https://raw.githubusercontent.com/spiced-academy/fs-web-exercises/main/sessions/recap-project-1/quiz-app/assets/homepage.png)
+![layout](https://rene-huber.site)
 
 # [External Link - DEMO Live ](https://rene-huber.site/)
