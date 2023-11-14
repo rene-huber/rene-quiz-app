@@ -28,6 +28,9 @@ h1 {
     font-family: 'VT323', monospace;
 }
 
+
+
+
 h2 {
     font-family: 'Oswald', sans-serif;
 }
@@ -83,7 +86,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-  margin-top: 133px;
+  margin-top: 187px;
 }
 
 #main_profile {
@@ -99,7 +102,7 @@ main {
 
  .answer {margin: 21px 0;
     height: fit-content;
-    z-index: 999;
+    z-index: 99;
     width: 100%;
     padding: 19px 34px;
     background-color: #fff;
@@ -237,6 +240,7 @@ footer {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-top: 1px solid #ff0090;
+    z-index: 999;
 }
 
 .icon {
@@ -292,8 +296,23 @@ footer {
 .characters_left {
     display: flex;
     justify-content: flex-end;
-    
+    font-family: 'Oswald', sans-serif;
     font-size: 12px;
-    color: #171717;
+    color: #F00;
+    font-weight: 800;
+
+    
     
 }
+
+.labelInputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    font-family: 'VT323', monospace;
+}
+
+textarea{ width: 100%;
+    box-shadow: 3px 3px 1px #bcbcbc;}
