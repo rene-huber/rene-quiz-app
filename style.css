@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 body {
     background-color: #ffffff;
     background-image: linear-gradient(#e8e8e8 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(to right, #e8e8e8 0.6000000000000001px, #ffffff 0.6000000000000001px);
@@ -14,6 +15,13 @@ body {
     justify-content: space-between;
     overflow-x: hidden;
 }
+
+.dark-mode{
+    background-color: #0c0c0c!important;
+    background-image: none!important;
+    background-size: 12px 12px;
+    color: #FFF;
+  }
 
 h1 {
     text-align: center;
@@ -88,6 +96,25 @@ main {
     display: none;
   }
 
+
+ .answer {margin: 21px 0;
+    height: fit-content;
+    z-index: 999;
+    width: 100%;
+    padding: 19px 34px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 9px 9px 13px rgb(0 0 0 / 23%);
+    text-align: left;
+    font-size: 17px;
+    color: #000;
+   
+    transition: all 0.3s ease-in-out;
+    
+   
+    
+ } 
+
 /* .card_bk_book {background: url("https://rene-huber.site/bookmark_filled.png") top right  no-repeat;
     background-size: 30px;}
 .card_bk_home {background: url("https://rene-huber.site/bookmark_filled2.png") top right  no-repeat;
@@ -103,7 +130,7 @@ main {
     justify-content: space-between; 
     align-items: center; 
     width: 350px;
-    height: 921px!important;
+    height: 321px;
     text-align: center;
     background-color: #f0f0f0;
     padding: 33px;
@@ -112,6 +139,9 @@ main {
     margin: 50px;
     border: 2px solid #FFF;
     position: relative;
+    transition: all 0.3s ease-in-out;
+
+    
 }
 
 .bookmarks {
@@ -129,7 +159,6 @@ main {
     color: #e22d90!important;
   
 }
-
 
 
 .buttons {
@@ -213,13 +242,21 @@ footer {
 .icon {
     display: flex;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 37px;
 }
 
 .icon a {
     font-size: 37px;
     color: #ff53b6;
 }
+
+.icon_active a {
+    font-size: 37px;
+    color: #6f475e!important;
+    text-shadow: 0px 0px 5px #1b1b1bf0
+}
+
+
 
 .icon:hover {
     transform: scale(1.2);
@@ -241,4 +278,22 @@ footer {
     font-size: 33px;
     color: #ccc;
     text-shadow: 1px 1px 1px #000;
+}
+.activeBookmarks {
+    position: absolute;
+    right: 8px;
+    top: -4px;
+    font-size: 33px;
+    color: #e22d90!important;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+.characters_left {
+    display: flex;
+    justify-content: flex-end;
+    
+    font-size: 12px;
+    color: #171717;
+    
 }

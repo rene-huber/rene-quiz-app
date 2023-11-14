@@ -1,52 +1,49 @@
+const form = document.querySelector('[data-js="formNewQuestion"]');
+const questionInput = document.querySelector('[data-js="question"]');
+const answerInput = document.querySelector('[data-js="answer"]');
+const tagInput = document.querySelector('[data-js="tag"]');
+const resultContainer = document.querySelector('[data-js="result-container"]');
 
-  const form = document.querySelector('[data-js="formNewQuestion"]');
-  const questionInput = document.querySelector('[data-js="question"]');
-  const answerInput = document.querySelector('[data-js="answer"]');
-  const resultContainer = document.querySelector('[data-js="result-container"]');
+const CountQuestion = document.querySelector('[data-js="CountQuestion"]');
+const CountAnswer = document.querySelector('[data-js="CountAnswer"]');
+const maxLengthText = questionInput.maxLength; //150 caracteres
 
-  
-  const CountQuestion = document.querySelector('[data-js="CountQuestion"]');
-  const CountAnswer = document.querySelector('[data-js="CountAnswer"]');
-  const maxLengthText = questionInput.maxLength;
+//func count text characters left
+function updateCountText(inputFields, CountValue) {
+  const remainingText = maxLengthText - inputFields.value.length;
+  CountValue.textContent = remainingText + " characters left";
+}
+questionInput.addEventListener("input", () => updateCountText(questionInput, CountQuestion));
+answerInput.addEventListener("input", () => updateCountText(answerInput, CountAnswer));
 
 
-  questionInput.addEventListener('input', () => updateCountText(questionInput, CountQuestion));
-  answerInput.addEventListener('input', () => updateCountText(answerInput, CountAnswer));
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-  function updateCountText(inputFields, CountValue) {
-    const remainingText = maxLengthText - inputFields.value.length;
-    CountValue.textContent = remainingText + ' characters left';
-    
-  }
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
 
-  // Agrega un controlador de eventos al formulario
+  const card = document.createElement("div");
+  card.classList.add("card");
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
+  const questionElement = document.createElement("p");
+  questionElement.textContent = `Question: ${data.question}`;
 
-    // Get form data
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
+  const answerElement = document.createElement("p");
+  answerElement.textContent = `Answer: ${data.answer}`;
 
-    // Create elements for the card
-    const card = document.createElement('div');
-    card.classList.add('card');
+  const tagElement = document.createElement("p");
+  tagElement.textContent = `Tag: ${data.tag}`;
 
-    const questionElement = document.createElement('p');
-    questionElement.textContent = `Question: ${data.question}`;
+  card.append(questionElement, answerElement, tagElement);
 
-    const answerElement = document.createElement('p');
-    answerElement.textContent = `Answer: ${data.answer}`;
+  form.after(card);
 
-    const tagElement = document.createElement('p');
-    tagElement.textContent = `Tag: ${data.tag}`;
+  //restart form values and counter > submit event
+  questionInput.value = "";
+  answerInput.value = "";
+  tagInput.value = "";
 
-    // Append elements to the card
-    card.append(questionElement);
-    card.append(answerElement);
-    card.append(tagElement);
-
-    // Append the card after the form
-    form.after(card);
+  updateCountText(questionInput, CountQuestion);
+  updateCountText(answerInput, CountAnswer);
 });
-

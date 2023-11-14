@@ -24,34 +24,54 @@
 
     <title>Quiz App</title>
   </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="form.html">Form</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Create a New Question</h1>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <h1>Create a New Question</h1>
 
-    <form data-js="formNewQuestion">
-      <label for="question">Your question:</label>
-      <textarea data-js="question" name="question" maxlength="150"></textarea>
-      <div data-js="CountQuestion" class="char-count">150 characters left</div>
+      <form data-js="formNewQuestion">
+        <label for="question">Your question:</label>
+        <textarea data-js="question" name="question" maxlength="150"></textarea>
+        <div data-js="CountQuestion" class="characters_left">
+          150 characters left
+        </div>
 
-      <label for="answer">Your answer:</label>
-      <textarea data-js="answer" name="answer" maxlength="150"></textarea>
-      <div data-js="CountAnswer" class="char-count">150 characters left</div>
+        <label for="answer">Your answer:</label>
+        <textarea data-js="answer" name="answer" maxlength="150"></textarea>
+        <div data-js="CountAnswer" class="characters_left">
+          150 characters left
+        </div>
 
-      <label for="tag">Tag:</label>
-      <input type="text" data-js="tag" name="tag">
+        <label for="tag">Tag:</label>
+        <input type="text" data-js="tag" name="tag" />
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
 
-    <div id="result-container" data-js="result-container"></div>
-  </main>
-
-  <script src="/js/form.js"></script>
-</body>
+      <div id="result-container" data-js="result-container"></div>
+    </main>
+    <footer>
+      <div class="icon">
+        <a href="/" class=""><i class="fa-solid fa-house"></i></a>
+      </div>
+      <div class="icon">
+        <a href="/bookmarks.html" class=""
+          ><i class="fa-solid fa-bookmark"></i
+        ></a>
+      </div>
+      <div class="icon icon_active">
+        <a href="/form.html" class="">
+          <i class="fa-solid fa-circle-plus"></i>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="/profile.html" class="">
+          <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="/js/form.js"></script>
+  </body>
 </html>

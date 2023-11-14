@@ -1,20 +1,18 @@
+const toggleBookMarks = document.querySelectorAll(".bookmarks");
+const toggleAnswers = document.querySelectorAll(".btn-answer");
 
-const toggleMarks = document.querySelectorAll('.bookmarks');
-
-
-toggleMarks.forEach((e) => {
-    e.addEventListener('click', () => {
-      // Toggle de la clase 'active'
-      e.classList.toggle('bookmarks_active');
-      console.log('click');
-    });
-
+toggleBookMarks.forEach((e) => {
+  e.addEventListener("click", () => {
+    e.classList.toggle("bookmarks_active");
   });
+});
 
-  document.querySelectorAll('.btn-answer').forEach(button =>
-    button.addEventListener('click', function() {
-      const answer = this.closest('.card').querySelector('.answer');
-      answer.classList.toggle('hidden');
-      this.textContent = answer.classList.contains('hidden') ? 'Show Answer' : 'Hide Answer';
-    })
-  );
+toggleAnswers.forEach((e) => {
+  e.addEventListener("click", () => {
+    const answer = e.parentElement.querySelector(".answer");
+    answer.classList.toggle("hidden");
+    e.textContent = answer.classList.contains("hidden")
+      ? "Show Answer"
+      : "Hide Answer";
+  });
+});

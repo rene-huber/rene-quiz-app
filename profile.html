@@ -10,65 +10,73 @@
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=VT323&display=swap"
+      rel="stylesheet"
+    />
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="toggle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="toggle.css" />
     <title>Quiz App</title>
   </head>
-  <body>
+  <body data-js="dark-mode">
     <header>
       <h1>Quiz App</h1>
     </header>
-    
+
     <main id="main_profile">
       <div class="profile">
-        
-        <img src="https://res.cloudinary.com/huberlin/image/upload/v1681779500/careplus/Fszgt2_XwAUVs8s_gso788.jpg" 
-        alt="Tu foto de perfil"/>
+        <img
+          src="https://res.cloudinary.com/huberlin/image/upload/v1681779500/careplus/Fszgt2_XwAUVs8s_gso788.jpg"
+          alt="Tu foto de perfil"
+        />
         <h2 class="profile_h2">Jhanny Muller</h2>
-        <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
       </div>
-      
+
       <div class="buttons">
-        <button>
-          <i class="fa-solid fa-bookmark"></i> 0
-        </button>
-        <button>
-          <i class="fa-solid fa-comment"></i> 0
-        </button>
+        <button><i class="fa-solid fa-bookmark"></i> 0</button>
+        <button><i class="fa-solid fa-comment"></i> 0</button>
       </div>
-      
-     
+
       <div class="container">
-       
         <label class="switch">
-            <input type="checkbox" class="input">
-                <div class="rail">
-                    <span class="circle"></span>
-                </div>
-            <span class="indicator"></span>
+          <input type="checkbox" class="input" />
+          <div class="rail">
+            <span class="circle"></span>
+          </div>
+          <span class="indicator"></span>
         </label>
-    </div>
-      
+      </div>
     </main>
 
-   
-
     <footer>
-      
       <div class="icon">
-          <a href="/" class=""><i class="fa-solid fa-house"></i></a>
+        <a href="/" class=""><i class="fa-solid fa-house"></i></a>
       </div>
       <div class="icon">
-          <a href="/bookmarks.html" class=""><i class="fa-solid fa-bookmark"></i> </a>
+        <a href="/bookmarks.html" class=""
+          ><i class="fa-solid fa-bookmark"></i>
+        </a>
       </div>
       <div class="icon">
-          <a href="/profile.html" class="active"> <i class="fa-solid fa-circle-user active"></i> </a>
+        <a href="/form.html" class="">
+          <i class="fa-solid fa-circle-plus"></i>
+        </a>
       </div>
-  </footer>
+      <div class="icon icon_active">
+        <a href="/profile.html" class="active">
+          <i class="fa-solid fa-circle-user active"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="/js/toggleSwitch.js"></script>
   </body>
 </html>
